@@ -1,0 +1,39 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "your-jira-tickets",
+  "title": "Your Jira Tickets",
+  "description": "This gives you a list of your Jira tickets in your org and allows you to quickly paste a link to the ticket",
+  "icon": "command-icon.png",
+  "author": "brandonFaf",
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "index",
+      "title": "Show JIRA ticket List and Detail",
+      "description": "This gives you a list of your Jira tickets in your org and allows you to quickly paste a link to the ticket",
+      "mode": "view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.52.1",
+    "@raycast/utils": "^1.7.1",
+    "dotenv": "^16.1.4",
+    "jira-client": "^8.2.2"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "1.0.5",
+    "@types/jira-client": "^7.1.6",
+    "@types/node": "18.8.3",
+    "@types/react": "18.0.9",
+    "eslint": "^7.32.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.4.3"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "npx @raycast/api@latest publish"
+  }
+}
